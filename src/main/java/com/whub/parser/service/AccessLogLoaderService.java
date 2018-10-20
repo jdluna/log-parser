@@ -1,6 +1,6 @@
 package com.whub.parser.service;
 
-import com.whub.parser.data.ParserArgs;
+import com.whub.parser.app.args.ParserArgs;
 
 public interface AccessLogLoaderService {
     /**

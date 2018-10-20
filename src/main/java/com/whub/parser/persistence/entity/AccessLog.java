@@ -11,7 +11,7 @@ public class AccessLog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDateTime dateTime;
+    private LocalDateTime logDate;
     private String ipAddress;
     private String request;
     private Integer status;
