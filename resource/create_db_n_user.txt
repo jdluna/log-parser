@@ -1,0 +1,4 @@
+CREATE DATABASE whub_access CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE USER 'whub'@'localhost' IDENTIFIED BY 'whub';
+GRANT ALL ON whub_access.* TO 'whub'@'localhost';
+FLUSH PRIVILEGES;
