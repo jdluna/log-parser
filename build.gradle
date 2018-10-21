@@ -33,9 +33,6 @@ dependencies {
     //lombok
     compileOnly('org.projectlombok:lombok')
 
-    //flyway
-    compile('org.flywaydb:flyway-core:5.2.0')
-
     runtimeOnly('mysql:mysql-connector-java:5.1.45')
     runtimeOnly('org.springframework.boot:spring-boot-devtools')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
