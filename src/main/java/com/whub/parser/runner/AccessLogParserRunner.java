@@ -41,15 +41,6 @@ public class AccessLogParserRunner implements CommandLineRunner {
      * @return {@link ParserArgs}
      */
     private ParserArgs parseCommandLineArgs() {
-        if (environment.getProperty("accesslog") == null ||
-                environment.getProperty("startDate") == null ||
-                environment.getProperty("duration") == null ||
-                environment.getProperty("threshold") == null) {
-            System.out.println("Required command line options are not found");
-            System.out.println("Sample usage $: java -jar log-parser.jar --accesslog=/path/to/file --startDate=2017-01-01.13:00:00 --duration=hourly --threshold=100");
-            System.exit(0);
-        }
-
         LocalDateTime startDate = LocalDateTime.parse(
                 environment.getRequiredProperty("startDate"),
                 DateTimeFormatter.ofPattern("yyyy-MM-dd.HH:mm:ss")
