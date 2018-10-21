@@ -23,9 +23,6 @@
 //step: 3
 # java -jar build/libs/log-parser-0.0.1.jar --accesslog=/path/to/access.log --startDate=2017-01-01.15:00:00 --duration=hourly --threshold=200
 ```
-
-* spring batch
-
 ### Database
 1. DB `whub_access` contains 2 basic tables
     1. `access_log` - this table save all the logs during parsing
